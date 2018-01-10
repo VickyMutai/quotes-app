@@ -14,6 +14,12 @@ export class QuoteComponent implements OnInit {
   toogleDetails(index){
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
   }
+
+    quoteVote(isGood, index){
+      if(isGood){
+        this.quotes.splice(index,1);
+      }
+    }
   constructor() { }
 
   ngOnInit() {
