@@ -8,12 +8,7 @@ import {Quote} from '../quotes'
 })
 export class QuoteDetailsComponent implements OnInit {
   @Input() quote:Quote
-  @Output() isGood= new EventEmitter<boolean>();
-
-  quoteVote(vote:boolean){
-    this.isGood.emit(vote);
-  }
-
+  @Output() isComplete= new EventEmitter<boolean>();
   constructor() { }
 
   ngOnInit() {
