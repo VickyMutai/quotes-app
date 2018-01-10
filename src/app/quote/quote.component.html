@@ -1,11 +1,19 @@
 <div class="jumbotron"><h1>QUOTES</h1></div>
 <div class="container">
+<div class="row">
+<div class="col-md-6">
+<app-quote-form></app-quote-form>
+</div>
+<div class="col-md-6">
 <ul>
   <div *ngFor='let quote of quotes;let i=index'>
     <li id="{{i}}" appUnderline>{{quote.name}}</li>
+    <app-vote></app-vote>
     <button (click)='toogleDetails(i)' class="btn info">More Info</button>
     <app-quote-details *ngIf="quote.showAuthor" [quote]='quote'
     (isComplete)='deleteQuote($event,i)'></app-quote-details>
 </div>
 </ul>
+</div>
+</div>
 </div>

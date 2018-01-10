@@ -1,6 +1,5 @@
 export class Quote {
   public showAuthor:boolean;
-  constructor(public id:number, public name:string,
-    public author:string, public vote:number){}
+  constructor(public id:number, public author:string,public name:string){}
       this.showAuthor=false;
 }

@@ -1,0 +1,11 @@
+<form #quoteForm = 'ngForm'>
+  <!--Author Input-->
+  <h3>AUTHOR: </h3>
+  <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author">
+  <!--Testing to see if we get data
+  Display {{newQuote.author}}-->
+
+  <!--Quote Input-->
+  <h3>QUOTE: </h3>
+  <textarea class="form-control" id="quote" rows="3" required></textarea>
+</form>
