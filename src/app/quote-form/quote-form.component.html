@@ -1,4 +1,4 @@
-<form #quoteForm = 'ngForm'>
+<form (ngSubmit)='submitQuote()' #quoteForm = 'ngForm'>
   <!--Author Input-->
   <h3>AUTHOR: </h3>
   <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel">
