@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { UnderlineDirective } from './underline.directive';
+import { VoteComponent } from './vote/vote.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { UnderlineDirective } from './underline.directive';
     AppComponent,
     QuoteComponent,
     QuoteDetailsComponent,
-    UnderlineDirective
+    UnderlineDirective,
+    VoteComponent
   ],
   imports: [
     BrowserModule
