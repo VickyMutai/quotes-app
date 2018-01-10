@@ -7,8 +7,8 @@ import {Quote} from '../quotes'
 })
 export class QuoteComponent implements OnInit {
   quotes= [
-    new Quote(1,'Live once, live well')
-    new Quote(2,'You are who you think you are')
+    new Quote(1,'Live once, live well', 'Vicky Toms')
+    new Quote(2,'You are who you think you are', 'Victor Biwott')
   ];
 
   constructor() { }
