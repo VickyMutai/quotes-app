@@ -7,8 +7,5 @@ import {Quote} from './quotes'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  quotes= [
-    new Quote(1,'Live once, live well')
-    new Quote(2,'You are who you think you are')
-  ];
+
 }
