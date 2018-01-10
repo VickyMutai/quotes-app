@@ -11,6 +11,9 @@ export class QuoteComponent implements OnInit {
     new Quote(2,'You are who you think you are', 'Victor Biwott')
   ];
 
+  toogleDetails(index){
+    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+  }
   constructor() { }
 
   ngOnInit() {
